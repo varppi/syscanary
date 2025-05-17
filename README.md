@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/linux-000000?style=for-the-badge&logo=linux">
   <img src="https://img.shields.io/badge/windows-000000?style=for-the-badge&logo=windows">
 </div>
-<b>This is basically tripwire, but for your Linux server. The idea is that you set up Syscanary to monitor changes in things that would indicate a system compromise or a malfunction.</b>
+<b>This is basically tripwire, but for your server. The idea is that you set up Syscanary to monitor changes in things that would indicate a system compromise or a malfunction so you can detect and mitigate the problem(s) early on.</b>
 
 ## Features
 Syscanary can currently monitor changes in:
