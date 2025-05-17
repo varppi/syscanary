@@ -1,0 +1,21 @@
+{
+    "loglevel": 1,
+    "detections": ["usb", "integrity", "ports", "internet"],
+    "modules": {
+        "integrity": {
+            "interval": 1,
+            "paths": ["/home/user/testing"]
+        },
+        "usb": {
+            "interval": 1
+        },
+        "ports": {
+            "interval": 1,
+            "ignorelocal": true
+        },
+        "internet": {
+            "interval": 1,
+            "domain": "example.com"
+        }
+    }
+}
