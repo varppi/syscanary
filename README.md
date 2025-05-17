@@ -14,7 +14,7 @@ Syscanary can currently monitor changes in:
 - Open ports (currently only Linux support)
 
 ## Installation
-```
+```bash
 sudo apt update && sudo apt install golang  
 go install github.com/spoofimei/syscanary/cmd/syscanary
 export PATH=$PATH:~/go/bin
@@ -27,12 +27,36 @@ export PATH=$PATH:~/go/bin
 Open syscanary.json and make your configurations:
 ```
 {
-    "loglevel": 1, # <-- 0=debug 1=info 2=error
-    "logfile": "alerts.log", # <-- remove if you want to have console output 
-    "detections": ["usb", "integrity", "ports", "internet"], # <-- remove or add modules to enable or disable them
-    "modules": { # <-- DO NOT REMOVE ANY MODULES FROM HERE AND DON'T LEAVE SETTINGS EMPTY!!!
+    "loglevel": 1, <-- 0=debug 1=info 2=error
+    "logfile": "alerts.log", <-- remove if you want to have console output 
+    "detections": ["usb", "integrity", "ports", "internet"], <-- remove or add modules to enable or disable them
+    "modules": { <-- DO NOT REMOVE ANY MODULES FROM HERE AND DON'T LEAVE SETTINGS EMPTY!!!
         "integrity": {
-            "interval": 1, # <-- how many seconds it will wait before checking again
+            "interval": 1, <-- how many seconds it will wait before checking again
+            "paths": ["/var/log"]
+        },
+        "usb": {
+            "interval": 1
+        },
+        "ports": {
+            "interval": 1,
+            "ignorelocal": true <-- doesn't alert when local binds change
+        },
+        "internet": {
+            "interval": 1,
+            "domain": "example.com" <-- domain to test the connectivity on
+        }
+    }
+}
+```
+Config without comments:
+```json
+{
+    "loglevel": 1,
+    "detections": ["usb", "integrity", "ports", "internet"],
+    "modules": {
+        "integrity": {
+            "interval": 1,
             "paths": ["/var/log"]
         },
         "usb": {
