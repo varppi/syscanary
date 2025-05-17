@@ -10,6 +10,7 @@
 Syscanary can currently monitor changes in:
 - File system
 - USB devices
+- Internet connectivity
 - Open ports (currently only Linux support)
 
 ## Installation
