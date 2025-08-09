@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/spoofimei/syscanary/internal/logging"
+	"github.com/Varppi/syscanary/internal/logging"
 )
 
 func TestLoggerDebug(t *testing.T) {

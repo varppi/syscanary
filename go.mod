@@ -1,4 +1,4 @@
-module github.com/spoofimei/syscanary
+module github.com/Varppi/syscanary
 
 go 1.22.2
 

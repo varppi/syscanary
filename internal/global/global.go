@@ -1,8 +1,8 @@
 package global
 
 import (
-	"github.com/spoofimei/syscanary/internal/config"
-	"github.com/spoofimei/syscanary/internal/logging"
+	"github.com/Varppi/syscanary/internal/config"
+	"github.com/Varppi/syscanary/internal/logging"
 )
 
 var (

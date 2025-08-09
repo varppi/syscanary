@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/spoofimei/syscanary/internal/config"
-	"github.com/spoofimei/syscanary/internal/global"
-	"github.com/spoofimei/syscanary/internal/logging"
-	"github.com/spoofimei/syscanary/internal/monitor"
+	"github.com/Varppi/syscanary/internal/config"
+	"github.com/Varppi/syscanary/internal/global"
+	"github.com/Varppi/syscanary/internal/logging"
+	"github.com/Varppi/syscanary/internal/monitor"
 )
 
 func TestMonitor(t *testing.T) {

@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/spoofimei/syscanary/internal/config"
-	"github.com/spoofimei/syscanary/internal/detections"
-	"github.com/spoofimei/syscanary/internal/global"
+	"github.com/Varppi/syscanary/internal/config"
+	"github.com/Varppi/syscanary/internal/detections"
+	"github.com/Varppi/syscanary/internal/global"
 )
 
 type Context struct {

@@ -16,7 +16,7 @@ Syscanary can currently monitor changes in:
 ## Installation
 ```bash
 sudo apt update && sudo apt install golang  
-go install github.com/spoofimei/syscanary/cmd/syscanary
+go install github.com/Varppi/syscanary/cmd/syscanary
 export PATH=$PATH:~/go/bin
 ```
 

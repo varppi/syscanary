@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/spoofimei/syscanary/internal/global"
+	"github.com/Varppi/syscanary/internal/global"
 
 	"github.com/google/gousb"
 )

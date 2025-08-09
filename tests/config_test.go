@@ -3,7 +3,7 @@ package syscanary_tests
 import (
 	"testing"
 
-	"github.com/spoofimei/syscanary/internal/config"
+	"github.com/Varppi/syscanary/internal/config"
 )
 
 func TestConfigParse(t *testing.T) {
